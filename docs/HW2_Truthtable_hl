@@ -1,0 +1,41 @@
+Harrison Latimer
+CS362 
+
+val < 150	val > 100	outcome	Condition Label
+T			T			T		C1
+T			F			F		C2
+F			T			F		C3
+
+
+a = 101 T & T
+a = 6  T & F
+a = 151 F & _
+
+
+val * 5 < 361	val / 2 < 24	outcome		Condition Label
+T				T				T			C4
+T				T				T			C5 (for branch)
+T				F				F			C6
+F				T				F			C7
+
+a = 10  T & T
+a = 6    T & T 
+a = 60   T & F
+a = 151  F & _
+
+
+(val > 75 or val / 8 < 10)	val**val % 5 == 0	outcome		Condition Label
+(T,F)						T					T			C8
+(T,T)						F					F			C9
+(F,T)						T					T			C10
+(T,F)						T					T			C11
+(F,F)						_					F           C12  
+
+
+a = 151 ((T or F) = T) & F
+a = 85  ((T or T) = T) & _
+a = 60 ((F or T) = T)  & T
+a = 100 ((T or F) = T) & T 
+a = ???
+
+
